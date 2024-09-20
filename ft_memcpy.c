@@ -6,13 +6,13 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:15:39 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/19 15:46:44 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/20 16:26:40 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*s;
 	unsigned char		*tmp;
@@ -23,4 +23,5 @@ void	ft_memcpy(void *dest, const void *src, size_t n)
 	{
 		*tmp++ = *s++;
 	}
+	return (dest);
 }
