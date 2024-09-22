@@ -6,13 +6,13 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:40:32 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/19 16:41:05 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/22 12:16:19 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		c += ('a' - 'A');
 	}
