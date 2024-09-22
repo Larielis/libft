@@ -6,11 +6,10 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:05:28 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/20 16:29:31 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/22 12:02:20 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	strlcat(char *dest, const char *src, size_t n)
