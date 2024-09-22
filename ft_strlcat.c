@@ -6,13 +6,13 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:05:28 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/22 12:02:20 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/22 20:51:45 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcat(char *dest, const char *src, size_t n)
+size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	size_t	dsize;
 	size_t	len;
