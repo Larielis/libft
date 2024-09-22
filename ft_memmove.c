@@ -6,19 +6,20 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:10:04 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/20 16:28:59 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/22 22:35:41 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
+#include <stddef.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
 	const unsigned char	*s;
 	unsigned char		*tmp;
 
-	if (dest < src || src + count <= dest)
+	if (dest < src || (const unsigned char *)src
+		+ count <= (const unsigned char *)dest)
 	{
 		return (ft_memcpy(dest, src, count));
 	}
@@ -27,7 +28,9 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 		s = src + count;
 		tmp = dest + count;
 		while (count--)
+		{
 			*--tmp = *--s;
+		}
 	}
 	return (dest);
 }
