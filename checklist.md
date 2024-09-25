@@ -17,8 +17,8 @@
 - [x] strrchr
 - [x] strncmp
 - [x] memchr
-- [ ] memcmp
-- [ ] strnstr
-- [ ] atoi
-- [ ] calloc
+- [x] memcmp
+- [x] strnstr
+- [x] atoi
+- [x] calloc
 - [ ] strdup 
