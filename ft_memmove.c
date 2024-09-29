@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:10:04 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/22 22:35:41 by racamach         ###   ########.fr       */
+/*   Updated: 2024/09/25 22:06:23 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,11 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 	const unsigned char	*s;
 	unsigned char		*tmp;
 
-	if (dest < src || (const unsigned char *)src
-		+ count <= (const unsigned char *)dest)
+	if (!dest || !src)
+		return (NULL);
+	s = (const unsigned char *)src;
+	tmp = (unsigned char *)dest;
+	if (tmp < s || s + count <= tmp)
 	{
 		return (ft_memcpy(dest, src, count));
 	}
