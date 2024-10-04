@@ -1,5 +1,6 @@
 # Libft
 
+## Part 1
 - [x] isalpha
 - [x] isdigit
 - [x] isalnum
@@ -21,4 +22,7 @@
 - [x] strnstr
 - [x] atoi
 - [x] calloc
-- [ ] strdup 
+- [x] strdup
+
+## Part 2
+- [x] ft_substr
