@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 16:12:56 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/04 19:58:15 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/08 20:35:14 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ char	*ft_strdup(const char *src);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strdup(const char *s1);
 #endif
