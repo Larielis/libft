@@ -41,8 +41,10 @@ OFILES := $(CFILES:.c=.o)
 CFLAGS := -Wall -Wextra -Werror
 
 $(NAME): $(OFILES)
-	gcc $(CFLAGS) -c $(CFILES)
 	ar rcs $(NAME) $(OFILES)
+
+%.o: %.c
+	cc $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
 
@@ -51,7 +53,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-
+	
 re: fclean all
 
 .PHONY: all clean fclean re
