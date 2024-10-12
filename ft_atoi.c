@@ -6,19 +6,10 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:13:04 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/29 13:41:44 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/12 11:26:52 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @brief Converts a string to an integer.
- * 
- * This function takes a string as input and converts it to an integer.
- * It handles optional leading whitespace, an optional sign, and numeric digits.
- * 
- * @param nptr The string to be converted.
- * @return The converted integer.
- */
 int	ft_atoi(const char *nptr)
 {
 	int	i;
