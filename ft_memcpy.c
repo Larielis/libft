@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:15:39 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/22 12:08:47 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/12 11:34:44 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const unsigned char	*s;
-	unsigned char		*tmp;
+	const unsigned char	*src_ptr;
+	unsigned char		*dest_ptr;
 
-	s = (const unsigned char *)src;
-	tmp = (unsigned char *)dest;
-	while (n)
+	if (!dest || !src)
+		return (NULL);
+	src_ptr = (const unsigned char *)src;
+	dest_ptr = (unsigned char *)dest;
+	while (n--)
 	{
-		*tmp = *s;
-		tmp++;
-		s++;
-		n--;
+		*dest_ptr++ = *src_ptr++;
 	}
 	return (dest);
 }
