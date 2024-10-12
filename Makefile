@@ -41,20 +41,16 @@ OFILES := $(CFILES:.c=.o)
 CFLAGS := -Wall -Wextra -Werror
 
 $(NAME): $(OFILES)
-	@echo "Compiling $(NAME)..."
-	@gcc $(CFLAGS) -c $(CFILES)
-	@ar rcs $(NAME) $(OFILES)
-	@echo "$(NAME) created!"
+	gcc $(CFLAGS) -c $(CFILES)
+	ar rcs $(NAME) $(OFILES)
 
 all: $(NAME)
 
 clean:
-	@echo "Cleaning object files..."
-	@rm -f $(OFILES)
+	rm -f $(OFILES)
 
 fclean: clean
-	@echo "Cleaning all build artifacts..."
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
