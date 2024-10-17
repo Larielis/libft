@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 06:44:33 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/14 06:44:39 by racamach         ###   ########.fr       */
+/*   Created: 2024/10/13 08:56:14 by racamach          #+#    #+#             */
+/*   Updated: 2024/10/17 21:28:54 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	count;
+	int	size;
 
-	count = 0;
-	while (lst != NULL)
+	size = 0;
+	while (lst)
 	{
-		count++;
 		lst = lst->next;
+		size++;
 	}
-	return (count);
+	return (size);
 }

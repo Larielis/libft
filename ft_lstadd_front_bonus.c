@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 06:43:37 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/14 06:44:45 by racamach         ###   ########.fr       */
+/*   Created: 2024/10/12 23:36:09 by racamach          #+#    #+#             */
+/*   Updated: 2024/10/17 21:27:46 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new != NULL)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	new->next = *lst;
+	*lst = new;
 }

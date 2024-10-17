@@ -36,7 +36,15 @@ CFILES := \
 	ft_tolower.c\
 	ft_toupper.c\
 
+BONUS_CFILE := \
+	ft_lstnew_bonus.c\
+	ft_lstadd_front_bonus.c\
+	ft_lstsize_bonus.c
+
 OFILES := $(CFILES:.c=.o)
+
+BONUS_OFILES = $(BONUS_CFILE:.c=.o)
+
 
 CFLAGS := -Wall -Wextra -Werror
 
@@ -48,12 +56,15 @@ $(NAME): $(OFILES)
 
 all: $(NAME)
 
+bonus: $(NAME) $(BONUS_OFILES)
+	ar rcs $(NAME) $(BONUS_OFILES)
+
 clean:
-	rm -f $(OFILES)
+	rm -f $(OFILES) $(BONUS_OFILES)
 
 fclean: clean
 	rm -f $(NAME)
 	
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
