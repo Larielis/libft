@@ -1,5 +1,3 @@
-MAKEFLAGS += --no-print-directory
-
 NAME := libft.a
 
 CFILES := \
@@ -76,6 +74,5 @@ re: fclean all
 
 .PHONY: all clean fclean re bonus
 
-# General rule for creating object files from .c files
 %.o: %.c
 	cc $(CFLAGS) -c $< -o $@
