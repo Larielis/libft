@@ -6,15 +6,17 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 16:12:56 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/17 21:28:35 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:54:12 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <limits.h>
 # include <stddef.h>
 # include <stdint.h>
+# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 

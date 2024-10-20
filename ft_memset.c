@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 01:34:26 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/17 21:58:44 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:31:09 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t			i;
+	size_t	i;
 	char	*tmp;
 
 	tmp = (char *)s;

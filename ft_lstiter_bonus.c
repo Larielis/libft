@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 07:55:32 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/14 07:56:05 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:50:14 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst != NULL && f != NULL)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
