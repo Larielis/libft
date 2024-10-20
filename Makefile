@@ -65,7 +65,7 @@ bonus: $(NAME) .bonus
 
 clean:
 	rm -f $(OFILES) $(BONUS_OFILES)
-	rm -f .bonus
+	@rm -f .bonus
 
 fclean: clean
 	rm -f $(NAME)
