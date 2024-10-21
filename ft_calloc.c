@@ -25,28 +25,30 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (tmp);
 }
 
-// int	main(void)
-// {
-// 	size_t	nmemb;
-// 	size_t	size;
-// 	int		*ft_calloc_array;
-// 	int		*calloc_array;
+/*
+ int	main(void)
+ {
+ 	size_t	nmemb;
+ 	size_t	size;
+ 	int		*ft_calloc_array;
+ 	int		*calloc_array;
 
-// 	nmemb = SIZE_MAX;
-// 	size = 0;
-// 	ft_calloc_array = (int *)ft_calloc(nmemb, size);
-// 	calloc_array = (int *)calloc(nmemb, size);
-// 	if (ft_calloc_array == NULL)
-// 		printf("ft_calloc failed\n");
-// 	else
-// 		printf("ft_calloc succeeded\n");
-// 	if (calloc_array == NULL)
-// 		printf("calloc failed\n");
-// 	else
-// 		printf("calloc succeeded\n");
-// 	printf("ft_calloc_array pointer: %p\n", (void *)ft_calloc_array);
-// 	printf("calloc_array pointer: %p\n", (void *)calloc_array);
-// 	free(calloc_array);
-// 	free(ft_calloc_array);
-// 	return (0);
-// }
+ 	nmemb = SIZE_MAX;
+ 	size = 0;
+ 	ft_calloc_array = (int *)ft_calloc(nmemb, size);
+ 	calloc_array = (int *)calloc(nmemb, size);
+ 	if (!ft_calloc_array)
+ 		printf("ft_calloc failed\n");
+ 	else
+ 		printf("ft_calloc succeeded\n");
+ 	if (!calloc_array)
+ 		printf("calloc failed\n");
+ 	else
+ 		printf("calloc succeeded\n");
+ 	printf("ft_calloc_array pointer: %p\n", (void *)ft_calloc_array);
+ 	printf("calloc_array pointer: %p\n", (void *)calloc_array);
+ 	free(calloc_array);
+ 	free(ft_calloc_array);
+ 	return (0);
+ }
+*/
