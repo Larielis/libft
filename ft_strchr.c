@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:03:06 by racamach          #+#    #+#             */
-/*   Updated: 2024/09/25 16:09:17 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:07:34 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strchr(const char *s, int c)
 		}
 		s++;
 	}
-	if (c == '\0')
+	if (*s == (char)c)
 	{
 		return ((char *)s);
 	}

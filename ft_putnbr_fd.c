@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:11:07 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/20 12:27:45 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/12 18:23:50 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,22 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long	num;
 	char	c;
 
-	num = n;
-	if (num < 0)
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
 	{
 		write(fd, "-", 1);
-		num = -num;
+		n = -n;
 	}
-	if (num > 9)
+	if (n > 9)
 	{
-		ft_putnbr_fd(num / 10, fd);
+		ft_putnbr_fd(n / 10, fd);
 	}
-	c = (num % 10) + '0';
+	c = (n % 10) + '0';
 	write(fd, &c, 1);
 }
