@@ -6,12 +6,28 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 19:09:52 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 18:24:04 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:51:07 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Allocates and returns a substring from the string `s`.
+ *
+ * This function allocates memory for a substring from the string `s`, 
+ * starting at index `start` and of maximum length `len`. If `s` is `NULL`, 
+ * the function returns `NULL`. If `start` is greater
+ * than the length of `s`, the function returns an empty string. 
+ * The memory for the new string is obtained with `malloc`, 
+ * and can be freed with `free`.
+ *
+ * @param s The input string.
+ * @param start The starting index of the substring.
+ * @param len The maximum length of the substring.
+ * @return A pointer to the newly allocated substring, 
+ * or `NULL` if memory allocation fails.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

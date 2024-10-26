@@ -6,12 +6,24 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 17:24:46 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 18:23:53 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:35:02 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Duplicates the given string `s1`.
+ *
+ * This function allocates sufficient memory for a copy of the string `s1`, 
+ * does the copy, and returns a pointer to it. 
+ * The memory for the new string is obtained with `malloc`,
+ * and can be freed with `free`.
+ *
+ * @param s1 The string to be duplicated.
+ * @return A pointer to the duplicated string, 
+ * or `NULL` if memory allocation fails.
+ */
 char	*ft_strdup(const char *s1)
 {
 	char	*duplicate;

@@ -6,12 +6,23 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 23:34:59 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 23:35:02 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:05:43 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Allocates and initializes a new element of the list.
+ *
+ * This function allocates memory for a new list element and initializes 
+ * its content with the value
+ * provided in the `content` parameter. 
+ * The `next` pointer of the new element is set to NULL.
+ *
+ * @param content The content to initialize the new element with.
+ * @return A pointer to the new element, or `NULL` if memory allocation fails.
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;

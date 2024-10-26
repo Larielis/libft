@@ -6,12 +6,22 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:11:07 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 18:23:50 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:28:16 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Outputs the integer `n` to the given file descriptor `fd`.
+ *
+ * This function writes the integer `n` to the file descriptor `fd`.
+ * It handles the special case of the minimum integer value 
+ * (-2147483648) separately.
+ *
+ * @param n The integer to be written.
+ * @param fd The file descriptor on which to write.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;

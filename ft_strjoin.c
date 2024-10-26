@@ -6,12 +6,27 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 22:15:37 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 18:23:55 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:37:37 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Allocates and returns a new string, which is the result 
+ * of the concatenation of `s1` and `s2`.
+ *
+ * This function allocates memory for a new string, 
+ * which is the result of the concatenation of `s1` and `s2`.
+ * If either `s1` or `s2` is `NULL`, the function returns NULL. 
+ * The memory for the new string is obtained with `malloc`,
+ * and can be freed with `free`.
+ *
+ * @param s1 The prefix string.
+ * @param s2 The suffix string.
+ * @return A pointer to the newly allocated string, 
+ * or `NULL` if memory allocation fails.
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	len1;

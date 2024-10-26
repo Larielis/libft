@@ -6,12 +6,22 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 20:25:04 by racamach          #+#    #+#             */
-/*   Updated: 2024/10/12 18:23:51 by racamach         ###   ########.fr       */
+/*   Updated: 2024/10/26 11:31:59 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Initializes the variables used in the ft_split function.
+ *
+ * This function sets the initial values of the variables used in the 
+ * `ft_split` function.
+ *
+ * @param i Pointer to the size_t variable to be initialized.
+ * @param j Pointer to the int variable to be initialized.
+ * @param s_word Pointer to the int variable to be initialized.
+ */
 static void	ft_initiate_vars(size_t *i, int *j, int *s_word)
 {
 	*i = 0;
@@ -19,6 +29,16 @@ static void	ft_initiate_vars(size_t *i, int *j, int *s_word)
 	*s_word = -1;
 }
 
+/**
+ * @brief Frees the allocated memory for the array of strings.
+ *
+ * This function frees the memory allocated for the array of strings 
+ * and its elements.
+ *
+ * @param strs The array of strings to be freed.
+ * @param count The number of strings in the array.
+ * @return NULL.
+ */
 static void	*ft_free_strs(char **strs, int count)
 {
 	int	i;
@@ -33,6 +53,21 @@ static void	*ft_free_strs(char **strs, int count)
 	return (NULL);
 }
 
+/**
+ * @brief Allocates and fills a new string with a substring from 
+ * the given string.
+ *
+ * This function allocates memory for a new string and fills it
+ * with a substring
+ * from the given string, starting at index `start` and ending at 
+ * index `end`.
+ *
+ * @param str The original string.
+ * @param start The starting index of the substring.
+ * @param end The ending index of the substring.
+ * @return A pointer to the newly allocated string, 
+ * or `NULL` if memory allocation fails.
+ */
 static char	*ft_fill_word(const char *str, int start, int end)
 {
 	char	*word;
@@ -52,6 +87,17 @@ static char	*ft_fill_word(const char *str, int start, int end)
 	return (word);
 }
 
+/**
+ * @brief Counts the number of words in the given string, 
+ * separated by the given delimiter.
+ *
+ * This function counts the number of words in the given string `str`, 
+ * where words are separated by the character `c`.
+ *
+ * @param str The string to be analyzed.
+ * @param c The delimiter character.
+ * @return The number of words in the string.
+ */
 static int	ft_word_count(const char *str, char c)
 {
 	int	count;
@@ -73,6 +119,20 @@ static int	ft_word_count(const char *str, char c)
 	return (count);
 }
 
+/**
+ * @brief Splits the given string into an array of strings, 
+ * using the given delimiter.
+ *
+ * This function splits the string `s` into an array of strings, 
+ * using the character `c` as the delimiter. 
+ * The resulting array is dynamically allocated and should be freed
+ * by the caller.
+ *
+ * @param s The string to be split.
+ * @param c The delimiter character.
+ * @return A pointer to the array of strings, 
+ * or `NULL` if memory allocation fails.
+ */
 char	**ft_split(const char *s, char c)
 {
 	char	**res;
